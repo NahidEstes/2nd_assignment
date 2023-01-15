@@ -48,6 +48,10 @@ a {
 }
 
 /* ====== header Styles Starts ====== */
+.header-section {
+  background-color: #fff4e7;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -71,11 +75,20 @@ a {
 .menu-links li a {
   color: #3e3e3e;
   font-size: 18px;
+  transition: 0.5s;
+}
+
+.menu-links li a:hover {
+  color: #ff900e;
 }
 
 /* ====== header Styles Ends ====== */
 
 /* ====== Banner Styles Starts ====== */
+.banner-section {
+  background-color: #fff4e7;
+  padding-bottom: 30px;
+}
 .banner-content {
   display: flex;
   flex-direction: column;
@@ -248,9 +261,59 @@ a {
 }
 /* ====== Facts Styles Ends ====== */
 
+/* ====== Extra Section Styles Start ====== */
+.extra-section {
+  margin: 30px 0;
+}
+
+.extra-section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.extra-section-title h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.extra-section-title h1 {
+  font-size: 35px;
+}
+
+.extra-section-contents {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.extra-section-contents .extra-section-content img {
+  width: 100%;
+}
+
+.extra-section-contents .extra-section-content i {
+  color: #696969;
+  padding: 0 10px;
+}
+
+.extra-section-contents .extra-section-content h3 {
+  margin: 10px 0;
+}
+
+.extra-section-contents .extra-section-content p {
+  color: #696969;
+  margin-bottom: 15px;
+}
+
+.extra-section-contents .extra-section-content a {
+  color: #ff900e;
+}
+
+/* ====== Extra Section Styles Ends ====== */
+
 /* ====== Sponsors Styles Starts ====== */
 .sponsors-section {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -296,15 +359,13 @@ a {
 }
 /* ====== Footer Styles Ends ====== */
 
-/* Media Queries */
+/* ----------------- Media Queries --------------- */
 @media only screen and (max-width: 575px) {
   .container {
     width: 100%;
   }
 
   /* header */
-  .header-section {
-  }
 
   .menu-links {
     flex-direction: column;
@@ -328,6 +389,9 @@ a {
   }
 
   /* banner */
+  .banner-section {
+    padding-bottom: 15px;
+  }
   .banner-content {
     justify-content: center;
     padding: 0 20px;
@@ -424,5 +488,19 @@ a {
 
   .sponsors-content .sponsors-icons img {
     width: 130px;
+  }
+  /* -- Extra Section -- */
+  .extra-section-contents {
+    flex-direction: column;
+  }
+
+  .extra-section-content {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .extra-section-title h1 {
+    font-size: 35px;
   }
 }
