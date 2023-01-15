@@ -227,6 +227,14 @@ a {
   border: 1px solid #ff900e;
   padding: 30px 40px;
   width: 220px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icon-boxes .icon-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .icon-boxes .icon-box h2 {
@@ -289,7 +297,7 @@ a {
 /* ====== Footer Styles Ends ====== */
 
 /* Media Queries */
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 575px) {
   .container {
     width: 100%;
   }
@@ -349,7 +357,7 @@ a {
     text-align: center;
   }
   .feature-texts h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   /* Experience section */
