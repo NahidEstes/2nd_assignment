@@ -47,7 +47,7 @@ a {
   border: 1px solid #ff900e;
 }
 
-/* ====== Nav Styles Starts ====== */
+/* ====== header Styles Starts ====== */
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -73,7 +73,7 @@ a {
   font-size: 18px;
 }
 
-/* ====== Nav Styles Ends ====== */
+/* ====== header Styles Ends ====== */
 
 /* ====== Banner Styles Starts ====== */
 .banner-content {
@@ -296,7 +296,27 @@ a {
 
   /* header */
   .header-section {
-    display: none;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .menu-bar {
+    margin: 20px 0;
+  }
+  .menu-links {
+    gap: 15px;
   }
 
   /* banner */
