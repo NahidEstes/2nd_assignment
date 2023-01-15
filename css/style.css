@@ -287,6 +287,11 @@ a {
   justify-content: center;
 }
 
+.extra-section-contents .extra-section-content {
+  padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 .extra-section-contents .extra-section-content img {
   width: 100%;
 }
